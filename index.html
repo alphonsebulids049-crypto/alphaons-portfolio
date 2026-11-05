@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2eee7">
+  <meta name="description" content="A portfolio of selected creative work and ways to get in touch.">
+  <title>Alphaons — Independent creative</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+    :root{--paper:#0a0b0d;--ink:#f1f2ea;--muted:#a1a69f;--green:#d6f27a;--line:#292d29;--orange:#d6f27a;--white:#151815;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 0%,rgba(214,242,122,.075),transparent 34rem),radial-gradient(ellipse at 92% 18%,rgba(120,130,92,.08),transparent 36rem),linear-gradient(140deg,#0a0b0d 0%,#111412 50%,#0b0e0c 100%);background-attachment:fixed;color:var(--ink);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}.wrap{width:min(1160px,calc(100% - 56px));margin:auto}
+    header{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{font-size:14px;font-weight:700;letter-spacing:.04em}.wordmark span{color:var(--orange)}nav{display:flex;align-items:center;gap:34px;font-size:13px;color:var(--muted)}nav a:hover{color:var(--ink)}.nav-cta{padding:11px 16px;border:1px solid var(--ink);border-radius:99px;color:var(--ink)}
+    .hero{padding:112px 0 104px;display:grid;grid-template-columns:1.5fr .65fr;gap:8%;align-items:end}.eyebrow{margin:0 0 24px;color:var(--green);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.17em}.hero h1{max-width:730px;margin:0;font:500 clamp(48px,7.2vw,94px)/1.02 var(--serif);letter-spacing:-.055em}.hero h1 em{font-weight:500;color:var(--green)}.hero-note{max-width:280px;margin:0 0 5px;color:var(--muted);font-size:15px}.hero-note strong{display:block;margin-bottom:12px;color:var(--ink);font-size:13px;font-weight:600}.scroll-cue{display:inline-flex;align-items:center;gap:11px;margin-top:31px;color:var(--green);font-size:12px;font-weight:600}.scroll-cue span{font-size:18px}
+    .work{padding:34px 0 116px}.section-top{display:flex;align-items:end;justify-content:space-between;margin-bottom:27px}.section-top h2{margin:0;font:500 36px/1.1 var(--serif);letter-spacing:-.03em}.section-label{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:54px 24px}.project{display:block}.project:nth-child(even){margin-top:76px}.project-art{position:relative;overflow:hidden;aspect-ratio:1.38;border-radius:3px;background:linear-gradient(135deg,#202823,#282b34 55%,#343026);display:flex;align-items:center;justify-content:center}.project:nth-child(2) .project-art{background:linear-gradient(135deg,#2c2420,#30272d 52%,#333024)}.project:nth-child(3) .project-art{background:linear-gradient(135deg,#202a2c,#252a35 54%,#263027)}.project:nth-child(4) .project-art{background:linear-gradient(135deg,#302b1c,#263027 54%,#302720)}.art-shape{position:absolute;width:44%;aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#d6f27a,#a8c963 70%,#809c54);left:28%;top:22%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}.project:nth-child(2) .art-shape{width:60%;height:58%;aspect-ratio:auto;border-radius:2px;background:linear-gradient(145deg,#d6f27a,#b0d664);transform:rotate(-11deg);top:23%;left:22%}.project:nth-child(3) .art-shape{width:53%;height:66%;aspect-ratio:auto;border-radius:48% 48% 4px 4px;background:linear-gradient(145deg,#c4d0bc,#8f9f8c);top:21%;left:24%}.project:nth-child(4) .art-shape{width:50%;aspect-ratio:1;border-radius:4px;background:linear-gradient(145deg,#d6f27a,#9eb85f);top:24%;left:27%;transform:rotate(14deg)}.art-sun{position:absolute;width:12%;aspect-ratio:1;border-radius:50%;background:#e5a66e;right:18%;top:16%}.project:nth-child(2) .art-sun{background:#f1dfbc;left:17%;right:auto;top:17%;width:15%}.project:nth-child(3) .art-sun{background:#edd6a6;right:21%;top:18%;width:13%}.project:nth-child(4) .art-sun{background:#738577;right:18%;top:16%;width:12%}.art-caption{position:absolute;bottom:20px;left:23px;color:rgba(241,242,234,.78);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.18em}.project-meta{display:flex;align-items:start;justify-content:space-between;padding-top:15px}.project-title{margin:0;font-size:16px;font-weight:600;letter-spacing:-.02em}.project-type{margin:4px 0 0;color:var(--muted);font-size:12px}.project-year{color:var(--muted);font-size:12px}.project:hover .art-shape{transform:scale(1.08) rotate(-4deg)}.project:nth-child(2):hover .art-shape{transform:scale(1.05) rotate(-7deg)}.project:nth-child(4):hover .art-shape{transform:scale(1.07) rotate(9deg)}
+    .about{border-top:1px solid var(--line);padding:88px 0 94px;display:grid;grid-template-columns:.65fr 1.35fr;gap:8%}.about h2{margin:0;font:500 35px var(--serif);letter-spacing:-.03em}.about-copy{max-width:650px}.about-copy p{margin:0 0 17px;color:#b7bcb4;font-size:18px;line-height:1.7}.about-copy p:first-child{color:var(--ink)}.about-copy .small{font-size:14px;color:var(--muted)}
+    .video-section{padding:26px 0 78px;border-top:1px solid var(--line)}.video-section .section-top{margin-bottom:24px}.video-upload{min-height:186px;padding:28px;border:1px dashed rgba(214,242,122,.45);border-radius:6px;background:linear-gradient(120deg,rgba(214,242,122,.045),rgba(255,255,255,.012));display:flex;align-items:center;justify-content:space-between;gap:24px;transition:background .2s,border-color .2s}.video-upload.is-dragging{border-color:var(--green);background:rgba(214,242,122,.09)}.upload-copy strong{display:block;margin-bottom:6px;font-size:15px}.upload-copy span,.video-note{color:var(--muted);font-size:12px}.upload-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border:0;border-radius:99px;background:var(--green);color:#14170d;font:700 12px var(--sans);cursor:pointer;white-space:nowrap}.upload-button:hover{filter:brightness(1.08)}.video-note{margin:14px 0 0}.video-input{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%);border:0}.video-input:focus-visible+.video-upload .upload-button{outline:2px solid var(--ink);outline-offset:3px}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}.video-card{min-width:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#111412}.video-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#050606}.video-card figcaption{padding:11px 13px;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.video-empty{padding:20px 0;color:var(--muted);font-size:13px}
+    footer{background:#0a0b0d;color:#f1f2ea;padding:72px 0 28px;border-top:1px solid var(--line)}.contact-head{display:flex;justify-content:space-between;align-items:end;gap:24px;padding-bottom:47px;border-bottom:1px solid rgba(245,242,235,.25)}.contact-head h2{max-width:570px;margin:0;font:500 clamp(38px,5vw,64px)/1.05 var(--serif);letter-spacing:-.04em}.contact-head p{max-width:230px;margin:0;color:rgba(245,242,235,.72);font-size:13px}.contact-row{display:flex;justify-content:space-between;align-items:center;padding:25px 0 53px}.contact-links{display:flex;gap:27px}.contact-links a{font-size:13px;color:rgba(245,242,235,.86);border-bottom:1px solid rgba(245,242,235,.35);padding-bottom:3px}.contact-links a:hover{color:white;border-color:white}.contact-hint{font-size:11px;color:rgba(245,242,235,.6)}.footnote{display:flex;justify-content:space-between;border-top:1px solid rgba(245,242,235,.25);padding-top:18px;color:rgba(245,242,235,.62);font-size:11px}
+    @media(max-width:700px){.wrap{width:min(100% - 36px,520px)}header{height:72px}nav{gap:17px}nav a:not(.nav-cta){display:none}.hero{padding:82px 0 75px;grid-template-columns:1fr;gap:32px}.hero h1{font-size:clamp(54px,13vw,76px)}.hero-note{max-width:360px}.hero-note strong{margin-bottom:8px}.scroll-cue{margin-top:20px}.work{padding:22px 0 75px}.section-top h2{font-size:30px}.grid{grid-template-columns:1fr;gap:33px}.project:nth-child(even){margin-top:0}.project-art{aspect-ratio:1.25}.video-section{padding:22px 0 55px}.video-upload{min-height:0;align-items:flex-start;flex-direction:column;padding:23px}.video-grid{grid-template-columns:1fr;gap:14px}.about{padding:62px 0;grid-template-columns:1fr;gap:22px}.about h2{font-size:30px}.about-copy p{font-size:16px}.contact-head{align-items:start;flex-direction:column;padding-bottom:30px}.contact-head h2{font-size:46px}.contact-row{align-items:start;flex-direction:column;gap:25px;padding-bottom:37px}.contact-links{gap:20px;flex-wrap:wrap}.footnote{gap:16px;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="wordmark" href="#top" aria-label="Alphaons home">ALPHAONS<span>·</span></a>
+      <nav aria-label="Main navigation"><a href="#videos">Videos</a><a href="#work">Work</a><a href="#about">About</a><a class="nav-cta" href="#contact">Get in touch ↗</a></nav>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <div><p class="eyebrow">Independent creative · Available for select projects</p><h1 id="intro-title">Making good ideas feel <em>impossible to ignore.</em></h1><a class="scroll-cue" href="#work"><span>↓</span> A few things I’ve made</a></div>
+        <p class="hero-note"><strong>A little introduction</strong>I’m an independent creative working across ideas, visuals and digital experiences. I help people make thoughtful work that feels unmistakably theirs.</p>
+      </section>
+      <section class="video-section" id="videos" aria-labelledby="videos-title">
+        <div class="section-top"><div><p class="eyebrow">01 / Video portfolio</p><h2 id="videos-title">Your videos, on show.</h2></div><span class="section-label">Add your own clips</span></div>
+        <input class="video-input" id="videoFiles" type="file" accept="video/*" multiple aria-label="Choose video files">
+        <div class="video-upload" id="videoDrop" role="group" aria-label="Add videos to your portfolio">
+          <div class="upload-copy"><strong>Drop video files here</strong><span>MP4, MOV, and other browser-supported formats</span></div>
+          <button class="upload-button" id="chooseVideos" type="button">＋ Choose videos</button>
+        </div>
+        <p class="video-note">Files preview in this browser session. To show videos to everyone on your live website, add the video files to your hosting and link them in the page.</p>
+        <div class="video-grid" id="videoGrid" aria-live="polite"><p class="video-empty" id="videoEmpty">Your video previews will appear here.</p></div>
+      </section>
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="section-top"><h2 id="work-title">Selected work</h2><span class="section-label">A handful of recent projects · 2022—25</span></div>
+        <div class="grid">
+          <a class="project" href="#contact" aria-label="Field Notes, identity and art direction">
+            <div class="project-art"><span class="art-shape"></span><span class="art-sun"></span><span class="art-caption">A slower kind of story</span></div>
+            <div class="project-meta"><div><h3 class="project-title">Field Notes</h3><p class="project-type">Identity · Art direction</p></div><span class="project-year">2025</span></div>
+          </a>
+          <a class="project" href="#contact" aria-label="Good Form, campaign and digital">
+            <div class="project-art"><span class="art-shape"></span><span class="art-sun"></span><span class="art-caption">Made for everyday rituals</span></div>
+            <div class="project-meta"><div><h3 class="project-title">Good Form</h3><p class="project-type">Campaign · Digital</p></div><span class="project-year">2024</span></div>
+          </a>
+          <a class="project" href="#contact" aria-label="Common Ground, web and strategy">
+            <div class="project-art"><span class="art-shape"></span><span class="art-sun"></span><span class="art-caption">Room to grow together</span></div>
+            <div class="project-meta"><div><h3 class="project-title">Common Ground</h3><p class="project-type">Web · Strategy</p></div><span class="project-year">2024</span></div>
+          </a>
+          <a class="project" href="#contact" aria-label="Sunday Objects, identity and packaging">
+            <div class="project-art"><span class="art-shape"></span><span class="art-sun"></span><span class="art-caption">Useful things, well made</span></div>
+            <div class="project-meta"><div><h3 class="project-title">Sunday Objects</h3><p class="project-type">Identity · Packaging</p></div><span class="project-year">2023</span></div>
+          </a>
+        </div>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">A bit about me</h2>
+        <div class="about-copy"><p>I like work with a point of view: clear thinking, a little curiosity, and enough care in the details to make it last.</p><p>I partner with good people to shape brands, build digital experiences and bring new ideas into the world. Every project starts with a conversation and takes its own shape from there.</p><p class="small">Based in [your city] · Working everywhere</p></div>
+      </section>
+    </main>
+  </div>
+  <footer id="contact"><div class="wrap">
+    <div class="contact-head"><h2>Have something good in mind?</h2><p>Tell me a little about it. I’d love to hear what you’re working on.</p></div>
+    <div class="contact-row"><div class="contact-links"><a href="mailto:hello@example.com">Email ↗</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><span class="contact-hint">Replace these links with your own details</span></div>
+    <div class="footnote"><span>© <span id="year">2025</span> Alphaons</span><span>Thoughtful work, made with care.</span></div>
+  </div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const videoInput = document.getElementById('videoFiles');
+    const videoGrid = document.getElementById('videoGrid');
+    const videoDrop = document.getElementById('videoDrop');
+    document.getElementById('chooseVideos').addEventListener('click', () => videoInput.click());
+    function addVideoFiles(files) {
+      for (const file of files) {
+        if (!file.type.startsWith('video/')) continue;
+        const card = document.createElement('figure');
+        card.className = 'video-card';
+        const video = document.createElement('video');
+        video.controls = true;
+        video.preload = 'metadata';
+        video.src = URL.createObjectURL(file);
+        const caption = document.createElement('figcaption');
+        caption.textContent = file.name;
+        card.append(video, caption);
+        document.getElementById('videoEmpty')?.remove();
+        videoGrid.append(card);
+      }
+    }
+    videoInput.addEventListener('change', event => addVideoFiles(event.target.files));
+    videoDrop.addEventListener('dragover', event => { event.preventDefault(); videoDrop.classList.add('is-dragging'); });
+    videoDrop.addEventListener('dragleave', () => videoDrop.classList.remove('is-dragging'));
+    videoDrop.addEventListener('drop', event => { event.preventDefault(); videoDrop.classList.remove('is-dragging'); addVideoFiles(event.dataTransfer.files); });
+  </script>
+</body>
+</html>
